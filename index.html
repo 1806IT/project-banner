@@ -36,22 +36,22 @@
         //程序
         index1 = 0;
         while(index1 < keys['length']){
-        div1=document.createElement('div')
+        div1=tag('div')
         div1.className='row'
         mid.appendChild(div1)
         rows = keys[index1]
         index2 = 0;
         while(index2<rows.length){
-            kbd1=document.createElement('kbd')
-            span1=document.createElement('span')
+            kbd1=tag('kbd')
+            span1=tag('span')
             span1.textContent=rows[index2]
             kbd1.appendChild(span1)
             span1.className= 'text'
             kbd1.className = 'key'
-            buttonX=document.createElement('button')
+            buttonX=tag('button')
             buttonX.textContent='E'
             buttonX.id= rows[index2]
-            img1 = document.createElement('img')
+            img1 = tag('img')
             if(hash[rows[index2]]){
                 img1.src = 'https://www.' + hash[rows[index2]] + '/favicon.ico'
             }else{
