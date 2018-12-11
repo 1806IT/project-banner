@@ -1,0 +1,87 @@
+*{margin:0;padding: 0; }
+body{
+    /*position: relative;*/
+    height:100vh;
+
+}
+main{
+    text-align: center;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./2.jpg);
+    background-size: cover;/*让壁纸自适应*/
+}
+
+.key{
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(to right, #292929 0%,#111111 100%);
+    color: #8c8c8c;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0px 1px #1a1b1c,0 0 0px 2px #1f2020,0 3px 0 2px #080808;
+    /*box-shadow: 0 0 0px 1px #1a1b1c   第一个参数左右调整，第二个上下调整，第三个虚化框的范围，第四个实框范围，第四个颜色*/
+    /*display: inline-flex;
+    align-items: center;/*左右居中*/
+    /*justify-content: center;*//*上下居中*/
+    font-size: 16px;
+    position: relative;
+}
+.row{
+    margin: 20px;
+}
+.row .key{
+    margin-left: 8px;
+}
+body main div.wrapper{
+    text-align: center;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    
+/*    position: absolute;*/
+}
+
+
+
+kbd{
+    width: 4em;
+    height: 4em;
+    border-radius: 5px;
+    border: 1px solid red;
+    margin: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    
+    position: relative;
+
+}
+
+body kbd button{
+    display:none;
+    position: absolute;
+    right:10px;
+    bottom: 1px;
+}
+kbd:hover button{
+    display: inline-block;
+}
+#mid> div:nth-child(2){
+    margin-left: -22px;
+}
+#mid> div:nth-child(3){
+    margin-left: -80px;
+}
+.key img{
+    width: 16px;
+    height: 16px;
+    left:5px;
+    bottom: 1px;
+    position: absolute;
+}
+.key span{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
