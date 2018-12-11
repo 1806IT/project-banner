@@ -54,6 +54,7 @@ function createButton(id){
         img2.onerror = function(xxx){
             console.log(xxx);
             console.log('此处需添加默认图标')
+            img2.src='./04.jpg';
         }
         localStorage.setItem('storage', JSON.stringify(hash))
     }
@@ -61,15 +62,16 @@ function createButton(id){
 }
 //生成image标签
 function createImage(domain){
-    var img1 = tag('img');//这个我没传属性，测试是否报错
+    var img1 = tag('img');//这个我没传属性，测试是否报错,结论没有报错
     if(domain){
         img1.src = 'https://www.' + domain + '/favicon.ico';
     }else{
-        img1.herf='./2.jpeg';
+        img1.src='./03.jpg';
     };
     img1.onerror = function(xxx){
         console.log(xxx);
         console.log('此处需添加默认图标')
+        img1.src='./04.jpg';
     };
     return img1;
 }
